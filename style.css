@@ -1,0 +1,1191 @@
+/*police*/
+@font-face {
+    font-family: 'ralewayblack';
+    src: url('font/raleway-black-webfont.woff2') format('woff2'),
+         url('font/raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*body*/
+ *{
+    font-family: 'ralewayblack' , Arial, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+ .container{
+     max-width: 1350px;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+ }
+
+ h1{
+     font-size: large;
+     margin-top: 25px;
+     margin-bottom: 25px;
+ }
+
+ .titreActivite{
+    font-size: large;
+     margin:30px;
+     margin-top: 25px;
+     margin-bottom: 25px; 
+ }
+ p{
+     font-size: small;
+     margin: 5px;
+ }
+
+ h3{
+     font-weight: bold;
+ }
+
+ /*header*/
+ header{
+     display: flex;
+     flex-direction:row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 40px 0px;
+ }
+
+ #logo{
+     margin: 30px;
+ }
+
+ .headernavlink{
+     margin-top: 00px;
+     
+ }
+
+ /*navigation*/
+.navigation{
+    display: flex;
+}
+
+nav a{
+    font-size:  0.9em;
+    color: black;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+}
+
+a :hover{
+    text-decoration: #0065fc;
+    color: #0065fc;
+}
+
+header nav a{
+    margin-left: 20px;
+} 
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+.hebergements a:hover{
+    border-top: 3px solid #0065fc;
+    color: #0065fc ;
+}
+
+.activitesNav a:hover{
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+}
+
+.headersign{
+    
+    color: #0065fc;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.mobile {
+    display:none;
+   }
+
+/*recherches*/
+.recherches{
+    display: flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.rechercheHebergement{
+    display: flex;
+    flex-direction: column;
+}
+
+.trouvez{
+    margin-bottom: 14px;
+    margin: 30px;
+}
+
+.enPlein{
+    margin: 30px;
+}
+
+/*barre de recherche*/
+.localisation{
+    position: relative;
+    height:40px;
+    background-color : #f2f2f2;
+    width: 54px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+
+.fa-map-marker-alt{
+    position: relative;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#sectionRecherche{
+    display: flex;
+    height: 40px;
+    margin-top: 15px;
+    margin: 30px;
+}
+
+.barreRecherche{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#rechercher{
+    background-color: #FFFFFF;
+    color: gray;
+    font-weight: bold;
+    border-top: grey ;
+    border-bottom: grey;
+    border-right: #FFFFFF;
+    border-left: #FFFFFF;
+    border: 1rem;
+}
+
+.rechercherBouton{
+    background-color: #0065fc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+    border: none;
+    color: white;
+    outline: none;
+    font-weight: bold;
+}
+.rechercherLoupe{
+    display: none;
+}
+
+/*filtres*/
+
+#sectionFiltres{
+    display: flex;
+    align-items: center;
+    margin: 32px 0px 41px 0px;
+}
+
+.boutonFiltre{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 25px;
+    flex-wrap: wrap;
+}
+.icone{
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+}
+
+.filtre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtre a{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    padding: 0px 25px 0px 65px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.titre p{
+    font-weight: bold;
+    margin: 30px;
+}
+
+.fa-money-bill-wave
+.fa-child
+.fa-heart
+.fa-dog{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: small;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.logements{
+    margin: 0px 0px 35px 30px;
+}
+
+.boutonFiltre:hover{
+    text-decoration: underline;
+}
+
+.fas.fa-info-circle{
+    color:#0065fc;
+}
+
+/*hebergements*/
+
+#hebergement{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+
+.titreHebergementsAMarseille{
+    margin: 0px;
+    font-size: large;
+    margin-bottom: 21px;
+}
+
+#hebergementMarseille{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 20px;
+    padding: 44px 25px 44px 25px;
+    max-width: 805px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.containerImage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 60px;
+}
+
+.carte{
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 5px 5px 10px 5px;
+    background-color:#FFFFFF;
+    max-width: 236px;
+    margin-bottom: 28px;
+}
+
+.hebergementImage{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.hebergementPhoto{
+    object-fit: cover;
+    width: 236px;
+    height: 112px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.hebergementContenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 16px;
+}
+
+.titreContenu{
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.tarifContenu{
+    padding-bottom: 11px;
+}
+
+.tarifContenu p{
+    font-size: 9px;
+    font-weight:normal;
+}
+
+.hebergementClassification{
+    padding-bottom: 11px;
+}
+
+.hebergementContenu a
+.populaireContenu a{
+    font-weight: bold;
+    font-style: normal;
+}
+
+#afficher{
+    font-weight: bold;
+}
+
+
+
+/*les plus populaires*/
+
+.titrePopulaires{
+    font-size: large;
+    margin-bottom: 25px;
+}
+
+#hebergementsPopulaires
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 45px 38px 105px 38px;
+    max-width: 345px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.hebergementsLesPlusPopulaires{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cartePopulaire{
+    border: 3px solid white;
+    border-radius: 20px;
+    display: flex;
+    background-color: white;
+    padding: 6px 58px 6px 6px;
+    max-width: 284px;
+    max-height: 135px;
+    margin-bottom: 29px;
+}
+
+.populairePhoto{
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.populaireContenu{
+    padding: 7px 0px 7px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titrePopulaireContenu{
+    padding-bottom: 14px;
+}
+
+.tarifPopulaireContenu{
+    padding-bottom: 30px;
+}
+
+.tarifPopulaireContenu p{
+    font-size: 9px;
+    font-weight: normal;
+
+}
+
+.populaireClassification{
+    max-width: 110px;
+    max-height: 15px;
+}
+
+/*activités à Marseille*/
+
+#activitesaMarseille{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 1350px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#activite{
+    margin-bottom: 27px;
+    font-size: large;
+}
+
+.activites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.activiteFortetIles,
+.activiteEgliseetParc{
+    display: flex;
+    flex-direction: column;
+}
+
+.activiteVieuxPort,
+.activiteFortDePomegues,
+.activiteIlesDuFrioul,
+.activiteParcNational,
+.activiteNotreDameDeLaGarde,
+.activiteParcLongchamp{
+    box-shadow: 0 0 20px #0000002e;
+    padding: 0px 0px 20px 0px;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+.photoActiviteVieuxPort,
+.photoActiviteFortDePomegues,
+.photoActiviteIlesDuFrioul,
+.photoActiviteParcNational,
+.photoActiviteNotreDamedelaGarde,
+.photoActiviteParcLongchamp{
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 22px 0px;
+}
+
+.photoVieuxPort,
+.photoFortdePomegues,
+.photoIlesduFrioul,
+.photoParcNational,
+.photoNotreDamedelaGarde,
+.photoParcLongchamp{
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#activitesaMarseille a{
+    font-size: large;
+}
+
+#activitesaMarseille h3{
+    font-size: medium;
+    padding: 6px;
+}
+
+/*footer*/
+footer {
+    max-width: 1350px;
+    padding: 48px 50px 48px 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    flex-direction: row;
+}
+
+.titreApropos {
+    padding-bottom: 22px;
+}
+
+.apropos {
+    display: flex;
+    flex-direction: column;
+}
+
+.titreNosHebergements {
+    margin-bottom: 22px;
+}
+
+.nosHebergements {
+    display: flex;
+    flex-direction: column;
+}
+
+.titreAssistance {
+    padding-bottom: 22px;
+}
+
+.assistance {
+    display: flex;
+    flex-direction: column;
+    margin-right: 335px;
+}
+
+footer p {
+    font-weight: normal;
+    font-size: 9px;
+}
+
+footer h3 {
+    font-size: large;
+}
+
+/*responsive*/
+
+@media all and (min-width : 1300px) and (max-width : 2560px) {
+
+
+    .photoVieuxPort,
+    .photoParcNational {
+        width: 301px;
+        height: 390px;
+    }
+
+    .photoFortdePomegues {
+        width: 304px;
+        height: 183px;
+    }
+
+    .photoIlesduFrioul {
+        width: 304px;
+        height: 112px;
+    }
+
+    .photoNotreDamedelaGarde {
+        width: 304px;
+        height: 141px;
+    }
+
+    .photoParcLongchamp {
+        width: 304px;
+        height: 155px;
+    }
+}
+
+@media all and (max-width : 1360px) {
+
+    header,
+    .recherches,
+    #sectionFiltres {
+        margin-left: 15px;
+    }
+}
+
+@media all and (max-width : 1300px) {
+
+    #hebergement {
+        margin-bottom: 50px;
+    }
+
+    .hebergementLesPlusPopulaires {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #hebergementsPopulaires {
+        max-width: 805px;
+    }
+
+    .photoVieuxPort {
+        width: 301px;
+        height: 390px;
+    }
+
+    .photoParcNational {
+        width: 304px;
+        height: 391px;
+    }
+
+    #activite {
+        margin-left: 45px;
+    }
+
+}
+
+@media all and (max-width : 1300px) {
+
+    .photoVieuxPort,
+    .photoFortdePomegues,
+    .photoIlesduFrioul,
+    .photoParcNational,
+    .photoNotreDamedelaGarde,
+    .photoParcLongchamp {
+        width: 309px;
+        height: 112px;
+    }
+
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp {
+        width: 309px;
+        height: 182px;
+        margin-right: 20px;
+    }
+
+    .activiteFortetIles,
+    .activiteEgliseetParc {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .activites {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media all and (max-width : 1006px) {
+
+    .apropos {
+        margin-bottom: 20px;
+    }
+
+    .nosHebergements {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width : 768px) {
+
+    .boutonFiltre {
+        margin-bottom: 5px;
+    }
+
+    .populairContenu {
+        width: 145px;
+    }
+
+    #activite {
+        margin-left: 50px;
+    }
+
+}
+
+@media all and (max-width : 665px) {
+
+    .activiteFortetIles,
+    .activiteEgliseetParc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hebergementsPopulaires { 
+        max-width : 100%
+    }
+}
+
+@media all and (max-width : 425px) {
+    header {
+        position: relative;
+        /*margin-bottom: 50px;*/
+    }
+
+    
+   .mobile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom : 3px solid #F2F2F2;
+   }
+
+   .mobile 
+   .headernavlink:hover{
+       border-bottom: 3px solid #0065fc;
+       color : #0065fc
+   }
+
+   .mobile a
+   .headernavlink a:hover{
+       color: #0065fc;
+   }
+
+    .rechercherBouton {
+        display: none;
+    }
+
+    .rechercherLoupe {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: #0065FC;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+    }
+
+    .rechercherLoupe 
+    .fas {
+        color: white;
+    }
+
+    
+
+    header,
+    .recherches,
+    #sectionFiltres {
+        margin-left: 0px;
+    }
+
+    .headersign {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+
+    .hebergements,
+    .activitesNav {
+        position:relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display:none;
+        justify-content: space-around;
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #activite {
+        margin-left: 0px;
+    }
+
+    .cartePopulaire {
+        max-width: 270px;
+    }
+
+    .carte,
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp {
+        box-shadow: 0 0 20px #0000002e;
+    }
+
+    .trouvez,
+    .enPlein,
+    .barreRecherche {
+        margin-left: 30px;
+    }
+
+    #hebergementMarseille:nth-child(1) {
+        order: 2;
+    }
+
+    #hebergementsPopulaires:nth-child(2) {
+        order: 1;
+    }
+
+    #hebergementMarseille {
+        background-color: #FFFFFF;
+    }
+
+    #hebergementsPopulaires {
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .boutonFiltre {
+        margin-bottom: 5px;
+    }
+
+    #sectionFiltres {
+        flex-direction: column;
+    }
+
+    .titre {
+        align-self: flex-start;
+        margin: 0px 0px 20px 30px;
+    }
+
+    #hebergementsPopulaires {
+        margin-bottom: 20px;
+        padding-left: 44px;
+    }
+
+    .carte {
+        max-width: 354px;
+        margin-left: 10px;
+    }
+
+    #afficher {
+        margin-left: 20px;
+    }
+
+    .hebergementPhoto {
+        width: 320px;
+        margin-left: 2px;
+    }
+
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp {
+        width: 340px;
+    }
+
+    .activites {
+        padding-left: 15px;
+    }
+
+    .photoVieuxPort,
+    .photoFortdePomegues,
+    .photoIlesduFrioul,
+    .photoParcNational,
+    .photoNotreDamedelaGarde,
+    .photoParcLongchamp {
+        width: 330px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .activites {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headernavlink {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        text-align: center;
+        font-size: 1.2rem;
+        border-bottom: 1px #ccc;
+    }
+
+    .hebergementancre {
+        width: 212px;
+    }
+
+    #logo {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+
+    header {
+        display: flex;
+        position: relative;
+        
+
+    }
+
+    .sinscrire {
+        position: absolute;
+        bottom: 50%;
+        right: -6%;
+
+    }
+
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp {
+        border-color: white;
+        max-width: 375px;
+        margin-left: 10px;
+    }
+
+
+
+    .activiteFortetIles,
+    .activiteEgliseetParc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activites {
+        flex-direction: column;
+    }
+
+    #activite {
+        margin-left: 60px;
+    }
+
+    #logo {
+        margin-left: 20px;
+    }
+
+    .containerImage {
+        margin-bottom: 0px;
+    }
+
+    #hebergement {
+        margin-bottom: 0px;
+    }
+
+    .activiteParcLongchamp {
+        margin-bottom: 0px;
+    }
+
+    .titreHebergementsAMarseille {
+        margin-left: 20px;
+    }
+
+    .titreVieuxPort,
+    .titreFortdePomegues,
+    .titreIlesduFrioul,
+    .titreParcNational,
+    .titreNotreDamedelaGarde,
+    .titreParcLongchamp {
+        margin-left: 15px;
+    }
+
+    .hebergements
+    .activitesNav {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    .hebergements:hover
+    .activitesNav:hover {
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+    .hebergements a:hover
+    .activitesNav a:hover {
+        border-top: none;
+        color: #0065FC;
+    }
+
+}
+
+@media all and (max-width : 375px) {
+    #activite{
+        margin-left: 50px;
+    }
+
+    .titreActivite {
+        margin-left: 12px;
+    }
+
+    .hebergements :nth-child(1){
+        align-self: flex-end;
+    }
+
+    .activitesNav :nth-child(2){
+        align-self: flex-end;
+    }
+    
+    .sinscrire {
+        position:absolute;
+        bottom: 50%;
+        right: -15%;
+    }
+
+    .hebergementancre {
+        margin-left: 35px;
+    }
+
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp {
+        margin-left: -10px;
+    }
+
+    .activites {
+        padding-left: 0px;
+    }
+
+    .cartePopulaire {
+        max-width: 260px;
+        padding-right: 20px;
+    }
+
+    #hebergementsPopulaires {
+        padding-right: 0px;
+    }
+
+    .carte {
+        max-width: 300px;
+    }
+
+    .hebergementPhoto {
+        width: 265px;
+    }
+
+    #activite {
+        padding-right: 11px;
+    }
+
+    .photoVieuxPort,
+    .photoFortdePomegues,
+    .photoIlesduFrioul,
+    .photoParcNational,
+    .photoNotreDamedelaGarde,
+    .photoParcLongchamp {
+        width: 260px;
+    }
+
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp{
+        max-width: 270px;
+    }
+
+    #activite {
+        margin-left: 30px;
+    }
+
+    .titreActivite {
+        margin-left: 20px;
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    
+}
+
+@media all and (max-width : 320px) {
+    footer {
+        max-width: 320px;
+    }
+
+    #hebergementsPopulaires {
+        max-width: 320px;
+        padding-left: 18px;
+        padding-right: 10px;
+    }
+
+    #hebergement {
+        padding-left: 8px;
+        padding-right: 5px;
+    }
+
+    #activite {
+        margin-left: 40px;
+    }
+
+    .titreActivite {
+        margin-left: 0px;
+    }
+
+    .rechercheHebergement,
+    #sectionRecherche {
+        margin-left: -10px;
+    }
+
+    .cartePopualaire {
+        padding-right: 10px;
+    }
+
+}
+/*FIN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+ 
+ 
+
+ 
+
+
+ 
+ 
+ 
