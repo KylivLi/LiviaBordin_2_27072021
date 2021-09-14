@@ -9,7 +9,7 @@
 
 /*body*/
  *{
-    font-family: 'ralewayblack' , Arial, Verdana, sans-serif;
+    font-family: 'ralewayblack', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
  }
@@ -169,6 +169,7 @@ header nav{
 }
 
 #rechercher{
+    text-align: center;
     background-color: #FFFFFF;
     color: gray;
     font-weight: bold;
