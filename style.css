@@ -3,8 +3,9 @@
     font-family: 'ralewayblack';
     src: url('font/raleway-black-webfont.woff2') format('woff2'),
          url('font/raleway-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight:lighter;
+    font-style:normal;
+    font-size: x-small;
 }
 
 /*body*/
@@ -12,6 +13,7 @@
     font-family: 'ralewayblack', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+   
  }
 
  .container{
@@ -19,6 +21,7 @@
      margin: auto;
      display: flex;
      flex-direction: column;
+     
  }
 
  h1{
@@ -52,7 +55,7 @@
  }
 
  #logo{
-     margin: 30px;
+     margin: 0;
  }
 
  .headernavlink{
@@ -120,6 +123,7 @@ header nav{
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin:0;
 }
 
 .rechercheHebergement{
@@ -129,11 +133,17 @@ header nav{
 
 .trouvez{
     margin-bottom: 14px;
-    margin: 30px;
+    margin: 0;
+    
+
+    
 }
 
 .enPlein{
-    margin: 30px;
+    margin: 0;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: lighter;
 }
 
 /*barre de recherche*/
@@ -160,7 +170,7 @@ header nav{
     display: flex;
     height: 40px;
     margin-top: 15px;
-    margin: 30px;
+    margin: 0;
 }
 
 .barreRecherche{
@@ -239,7 +249,7 @@ header nav{
 
 .titre p{
     font-weight: bold;
-    margin: 30px;
+    margin: 0;
 }
 
 .fa-money-bill-wave
@@ -247,12 +257,14 @@ header nav{
 .fa-heart
 .fa-dog{
     font-size: 1.5em;
+    margin: 0;
 }
 
 h3{
     font-size: small;
     font-style: normal;
     font-weight: normal;
+    
 }
 
 .logements{
@@ -345,8 +357,8 @@ h3{
 }
 
 .tarifContenu p{
-    font-size: 9px;
-    font-weight:normal;
+    font-size: x-small;
+    font-weight:lighter; 
 }
 
 .hebergementClassification{
@@ -445,6 +457,7 @@ h3{
     max-width: 1350px;
     margin-left: 5px;
     margin-right: 5px;
+    /*padding-right: 15px;*/
 }
 
 #activite{
@@ -563,7 +576,9 @@ footer h3 {
 
 @media all and (min-width : 1300px) and (max-width : 2560px) {
 
-
+    h3{
+        margin: 0;
+    }
     .photoVieuxPort,
     .photoParcNational {
         width: 301px;
@@ -721,6 +736,7 @@ footer h3 {
     flex-wrap: wrap;
     width: 100%;
     border-bottom : 3px solid #F2F2F2;
+    margin: 0;
    }
 
    .mobile 
@@ -816,6 +832,8 @@ footer h3 {
 
     #hebergementMarseille {
         background-color: #FFFFFF;
+        margin: 0;
+        padding-left: 25px;
     }
 
     #hebergementsPopulaires {
@@ -838,7 +856,7 @@ footer h3 {
 
     #hebergementsPopulaires {
         margin-bottom: 20px;
-        padding-left: 44px;
+        padding-left: 25px;
     }
 
     .carte {
@@ -900,6 +918,7 @@ footer h3 {
     #logo {
         align-self: flex-start;
         margin-left: 10px;
+
     }
 
     header {
