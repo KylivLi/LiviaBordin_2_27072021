@@ -649,6 +649,11 @@ footer h3 {
 
 @media all and (max-width : 1300px) {
 
+    #activitesaMarseille {
+        flex-direction: column;
+        height: auto;
+    }
+
     .photoVieuxPort,
     .photoFortdePomegues,
     .photoIlesduFrioul,
@@ -659,12 +664,18 @@ footer h3 {
         height: 112px;
     }
 
+    .photoVieuxPort,
+    .photoParcNational {
+        height: 100%;
+    }
+
     .activiteVieuxPort,
     .activiteFortDePomegues,
     .activiteIlesDuFrioul,
     .activiteParcNational,
     .activiteNotreDameDeLaGarde,
     .activiteParcLongchamp {
+        flex-direction: column;
         width: 309px;
         height: 182px;
         margin-right: 20px;
@@ -694,21 +705,132 @@ footer h3 {
     }
 }
 
-@media all and (max-width : 768px) {
+@media all and (max-width : 745px) {
 
     .boutonFiltre {
         margin-bottom: 5px;
     }
 
-    .populairContenu {
+    .containerImage,
+    .carte,
+    .hebergementClassification,
+    .hebergementContenu,
+    .hebergementImage,
+    .hebergementPhoto{
+        flex-direction: column;
+
+    }
+
+    
+    .photoVieuxPort,
+    .photoParcNational {
+        height: 100%;
+    }
+
+    .populaireContenu {
         width: 145px;
+      
+    }
+
+    #afficher {
+        margin-left: 20px;
     }
 
     #activite {
-        margin-left: 50px;
+        margin-left: 25px;
+    }
+    
+    .activiteFortetIles,
+    .activiteEgliseetParc,
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp {
+        max-width: 308px;
+        display: flex;
+        flex-direction: column;
+    
     }
 
-}
+    .activiteFortetIles,
+    .activiteEgliseetParc,
+    .activiteVieuxPort,
+    .activiteFortDePomegues,
+    .activiteIlesDuFrioul,
+    .activiteParcNational,
+    .activiteNotreDameDeLaGarde,
+    .activiteParcLongchamp
+     {
+        display: flex;
+        flex-direction: column;
+        max-width: 308px;
+        height: auto;
+        flex-shrink: 0; 
+        
+     }
+
+
+     .activiteVieuxPort,
+     .activiteParcNational {
+         height : auto;
+     }
+
+     .activites {
+         display: flex;
+         justify-content: center;
+         flex-direction: raw;
+         flex-wrap: wrap;
+         height: 100%;
+     }
+
+     /*#activitesaMarseille {
+        height: 100%;
+    }*/
+
+    .carte,
+    .activites,
+    .activiteVieuxPort,
+    .photoVieuxPort,
+    .activiteParcNational,
+    .photoParcNational,
+    .photoActiviteVieuxPort,
+    .photoActiviteParcNational,
+    .titreVieuxPort,
+    .titreParcNational,
+    .titreParcNational a,
+    .titreVieuxPort a  {
+        height : auto;} 
+
+
+     #hebergementMarseille {
+        padding: 80px 100px 50px 100px;
+        display: block;
+        margin-left: 140px;
+        margin-right: 140px;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white;
+     }  
+
+     .carte{
+         padding: 12px; 
+     }
+     
+    #hebergementsPopulaires{
+        padding: auto;
+        display: block;
+        margin-left: 140px;
+        margin-right: -120px;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white;
+    } 
+
+   }       
+ 
+
 
 @media all and (max-width : 665px) {
 
@@ -784,8 +906,6 @@ footer h3 {
         flex-direction: row;
     }
 
-    
-
     .hebergements,
     .activitesNav {
         position:relative;
@@ -839,6 +959,7 @@ footer h3 {
     #hebergementsPopulaires {
         border-radius: 20px;
         width: 100%;
+        background-color: gray;
     }
 
     .boutonFiltre {
@@ -945,8 +1066,6 @@ footer h3 {
         max-width: 375px;
         margin-left: 10px;
     }
-
-
 
     .activiteFortetIles,
     .activiteEgliseetParc {
