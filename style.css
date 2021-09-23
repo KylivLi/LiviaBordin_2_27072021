@@ -959,7 +959,7 @@ footer h3 {
     #hebergementsPopulaires {
         border-radius: 20px;
         width: 100%;
-        background-color: gray;
+        background-color: #f2f2f2;
     }
 
     .boutonFiltre {
